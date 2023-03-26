@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>مكتبة Bookstore</title>
+    
+</head>
+<body>
+    <h2> library Bookstore</h2>
+    <p id="demo">Welcom on my library  </p>
+    <label id="bookID"  >Book ID</label>
+    <input type="text" id="BookIDText" value="enter the book id" ><br>
+    <label id="bookName" >Book Name</label>
+    <input type="text" id="bookNameText" value="enter the book name"><br>
+    <label id="bookAuthor">Book Author</label>
+    <input type="text" id="bookAuthorText" value="enter the book Author" ><br>
+    <label id="bookPrice">Book Price</label>
+    <input type="text" id="bookPriceText" value="enter the book Price" ><br>
+    <label id="bookQuantity">Book Quantity</label>
+    <input type="text" id="bookQuantityText" value="enter the book Quantity" ><br>
+
+<button class="but" type="button" onclick="showBook()">show Book</button> <!--onclick="showBook()" استدعاء لدالة function-->
+<button class="but" onclick="window.print()">Price this page </button><!--window.print()طباعة الصفحة الحالية -->
+<button class="but" type="button" onclick="hideBook()">Hide Book</button>
+<button  class="but"type="button" onclick="addBook()">add Book</button>
+<button class="but" type="button" onclick="deleteBook()">Delete lest book</button>
+<button class="but" type="button" onclick="queryId()">Query through Id</button>
+<button class="but" type="button" onclick="queryName()">Query through name</button>
+<button  class="but"type="button" onclick="queryAuthor()">Query through Author</button>
+<button class="but" type="button" onclick="invoice()">invoice</button>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Reservation Management System</h1>
+    </header>
+
+    <main>
+      <section id="vehicles">
+        <h2>Vehicles</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Manufacturer</th>
+            <th>ID</th>
+            <th>Type</th>
+          </tr>
+          <tr>
+            <td>Model S</td>
+            <td>Tesla</td>
+            <td>1</td>
+            <td>Electric</td>
+          </tr>
+          <tr>
+            <td>Corolla</td>
+            <td>Toyota</td>
+            <td>2</td>
+            <td>Gas</td>
+          </tr>
+          <tr>
+            <td>Civic</td>
+            <td>Honda</td>
+            <td>3</td>
+            <td>Gas</td>
+          </tr>
+          <tr>
+            <td>Boeing 747</td>
+            <td>Boeing</td>
+            <td>4</td>
+            <td>Commercial</td>
+          </tr>
+          <tr>
+            <td>Cessna 172</td>
+            <td>Cessna</td>
+            <td>5</td>
+            <td>Private</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="employees">
+        <h2>Employees</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Date of Birth</th>
+            <th>License ID / Role</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>1</td>
+            <td>01/01/1980</td>
+            <td>1234567 (Driver)</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>2</td>
+            <td>02/02/1990</td>
+            <td>7654321 (Pilot)</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="reservations">
+        <h2>Reservations</h2>
+        <form>
+          <label for="employeeId">Employee ID:</label>
+          <input type="text" id="employeeId" />
+
+          <label for="vehicleId">Vehicle ID:</label>
+          <input type="text" id="vehicleId" />
+
+          <button type="submit">Assign Vehicle</button>
+        </form>
+
+        <table>
+          <tr>
+            <th>Reservation ID</th>
+            <th>Reservation Date</th>
+            <th>Employee Name</th>
+            <th>Vehicle Name</th>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Reservation Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

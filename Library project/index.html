@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>مكتبة Bookstore</title>
+    
+</head>
+<body>
+    <h2> library Bookstore</h2>
+
+                    <label id="bookID" style="display: none;" >Book ID</label> 
+                    <input type="text" id="BookIDText" value="enter the book id" style="display: none;" ><br>
+                    <label id="bookName"  style="display: none;" >Book Name</label>
+                <input type="text" id="bookNameText" value="enter the book name" style="display: none;"><br>
+                    <label id="bookAuthor" style="display: none;">Book Author</label>
+                    <input type="text" id="bookAuthorText" value="enter the book Author" style="display: none;"><br>
+
+                    <label id="bookPrice" style="display: none;">Book Price</label>
+                    <input type="text" id="bookPriceText" value="enter the book Price" style="display: none;"><br>
+                <label id="bookQuantity"style="display: none;">Book Quantity</label>
+                        <label id="bookPrice" style="display: none;">Book Price</label>
+                    <input type="text" id="bookPriceText" value="enter the book Price" style="display: none;"><br>
+                    <label id="bookQuantity"style="display: none;">Book Quantity</label>
+                    <input type="text" id="bookQuantityText" value="enter the book Quantity" style="display: none;"><br>
+<div class="but">
+<button  type="button" onclick="showBook()">show Book</button> <!--onclick="showBook()" استدعاء لدالة function-->
+<button  onclick="window.print()">Price this page </button><!--window.print()طباعة الصفحة الحالية -->
+<button  type="button" onclick="hideBook()">Hide Book</button>
+<button  type="button" onclick="addBook()">add Book</button>
+<button  type="button" onclick="deleteBook()">Delete lest book</button>
+<button  type="button" onclick="queryId()">Query through Id</button>
+<button  type="button" onclick="queryName()">Query through name</button>
+<button  type="button" onclick="queryAuthor()">Query through Author</button>
+<button type="button" onclick="invoice()">invoice</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
